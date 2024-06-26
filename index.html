@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script type="module" src="index.js"></script>
+</head>
+
+<body>
+    <h1>Demo</h1>
+    <p>This WebComponent uses the PopOver API which was added in Chome 114.0 and Firefox 125.0. The scroring function
+        type selection does not work on older versions.</p>
+    <p>Every category score is beeing computed in Rust using WebAssembly. </p>
+    <p></p>
+    <scoring-calc>
+        <scoring-calc-row name="1" value="0.5" target="0" mode="0" type="a" weight="25" spread="10"
+            score="0"></scoring-calc-row>
+        <scoring-calc-row name="2" value="-0.5" target="0" mode="1" type="b" weight="25" spread="10"
+            score="0"></scoring-calc-row>
+        <scoring-calc-row name="3" value="0.5" target="0" mode="-1" type="c" weight="25" spread="10"
+            score="0"></scoring-calc-row>
+        <scoring-calc-row name="4" value="0.5" target="0" mode="0" type="d" weight="25" spread="10"
+            score="0"></scoring-calc-row>
+        <scoring-calc-row name="5" value="0.5" target="0" mode="0" type="e" weight="25" spread="10"
+            score="0"></scoring-calc-row>
+    </scoring-calc>
+
+
+</body>
+
+</html>
