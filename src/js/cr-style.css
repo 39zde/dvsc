@@ -1,0 +1,145 @@
+option[value="0"] {
+    white-space: unset;
+}
+
+.modal {
+    height: fit-content;
+    width: fit-content;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid grey;
+    position: absolute;
+}
+
+.modal>span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.formula-button {
+    background-color: white;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 100ms ease-in-out;
+}
+
+.formula-button:hover {
+    background-color: lightgrey;
+
+}
+
+.value-input {
+    border: none;
+    width: 50px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.value-input {
+    -moz-appearance: textfield;
+    width: 50px;
+    text-align: end;
+}
+
+.value-input::-webkit-outer-spin-button,
+.value-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.type-select {
+    position: relative;
+    width: 50px;
+    background: white;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.weight-input,
+.spread-input {
+    border: none;
+    text-align: center;
+    max-width: 129px;
+    min-width: 50px;
+    cursor: w-resize;
+}
+
+.weight-col,
+.spread-col {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.mode {
+    width: 50px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    text-align: end;
+}
+
+.category-row {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 32px;
+    grid-auto-flow: column;
+    grid-template-columns: 120px 50px 50px 50px 50px 197px 197px 50px;
+    justify-content: space-between;
+}
+
+.row-score {
+    width: 50px;
+    text-align: right;
+}
+
+
+.category-row>th {
+    text-align: left;
+}
+
+.category-row>td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out-wrapper {
+    width: 45px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+}
+
+.target {
+    text-align: center;
+}
+
+.plot-link {
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    color: grey;
+    display: block;
+}
+
+
+output,
+option {
+    font-family: monospace;
+    font-size: 16px;
+}

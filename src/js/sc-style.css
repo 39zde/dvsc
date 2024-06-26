@@ -1,0 +1,135 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 100px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    gap: 17px;
+    align-items: stretch;
+}
+
+.table-head>tr>th {
+    font-weight: 400;
+    color: #999999;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.table-head>tr>th:nth-of-type(1) {
+    text-align: left;
+}
+
+.table-head>tr {
+    border-bottom: 1px solid#999999;
+    ;
+    padding: 8px 0;
+}
+
+.table-head>tr,
+.table>tbody>tr {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 32px;
+    grid-auto-flow: column;
+    grid-template-columns: 120px 40px 40px 40px 40px 197px 197px 40px;
+    justify-content: space-between;
+}
+
+
+.svg-wrapper {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-svg {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    overflow: visible;
+}
+
+.sc-svg * {
+    transition: all 0.1s ease-out;
+}
+
+circle#indicator {
+    stroke-width: 4px;
+    stroke-linecap: round;
+    fill: none;
+    height: 50px;
+    width: 50px;
+}
+
+.score {
+    height: 50px;
+    width: 50px;
+}
+
+text#score-text {
+    text-anchor: middle;
+    font-family: monospace;
+    font-size: 32px;
+    font-weight: bold;
+    dominant-baseline: middle;
+}
+
+circle.fraction {
+    stroke-width: 3px;
+    stroke-linecap: round;
+    fill: none;
+    -webkit-transform-origin: center;
+    -o-transform-origin: center;
+    transform-origin: center;
+
+}
+
+circle.fraction_bg {
+    opacity: 0.5;
+}
+
+circle.fraction_bar {
+    opacity: 1;
+}
+
+text.category_text {
+    font-size: 8px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.reset-button {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reset-button:hover {
+    background-color: lightslategray;
+}
+
+abbr:hover {
+    cursor: help
+}
